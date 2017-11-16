@@ -2,6 +2,8 @@
 layout: post
 title: Jekyll과 GitHub Pages로 블로그 시작하기
 ---
+![title image]({{ site.url }}/assets/2017-11-18-make-a-blog-with-jekyll-and-github-pages/title_bar.jpg)
+
 # Jekyll과 GitHub Pages로 블로그 시작하기
 블로그 서비스는 굉장히 많습니다. 워드프레스, 네이버 블로그, 티스토리 등등. 그리고 각각의 서비스는 나름의 장점과 단점을 갖고 있습니다. 그런데, 그 어떤 서비스도 저에겐 잘 맞지 않았습니다. 우선 글을 브라우저에서 작성해야 한다는 점이 가장 마음에 들지 않았습니다. 백스페이스가 뒤로가기와 같은 단축키이던 시절, 브라우저에서 글을 쓴다는건 고역이었습니다. 물론 따로 적어뒀다가 옮겨도 됩니다만, 글을 잘 꾸미지 못하는 저에겐 WYSWYG은 너무 어렵더군요.
 
