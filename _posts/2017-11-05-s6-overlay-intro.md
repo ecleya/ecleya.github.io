@@ -2,7 +2,7 @@
 layout: post
 title: s6 overlay 소개
 ---
-![title image]({{ site.url }}/_assets/2017-11-05-s6-overlay-intro/s6_overlay_intro.jpeg)
+![title image]({{ site.url }}/_assets/2017-11-05-s6-overlay-intro/s6_overlay_intro.webp)
 
 # s6 overlay 소개
 Docker는 하나의 컨테이너에 하나의 프로그램을 띄우는 것이 원칙입니다. 그러나, 지금까지 이런 식으로 프로그램을 작성해 본 경험이 적어서인지 아니면 그냥 현실성이 떨어지는 원칙이어서 인지는 확실치 않습니다만, 이런 방법으로 프로그램을 만든다는게 별로 쉬운일은 아닙니다.
