@@ -1,0 +1,19 @@
+{
+    "name": "blueviolet",
+    "build": {
+        "context": "..",
+        "dockerfile": "dockerfile"
+    },
+    "runArgs": [
+        "--env-file",
+        ".devcontainer/.env"
+    ],
+    "remoteEnv": {
+        "HISTFILE": "/workspace/.devcontainer/.zsh_history"
+    },
+    "mounts": [
+        "source=${localWorkspaceFolder},target=/workspace/,type=bind,consistency=cached"
+    ],
+    "workspaceFolder": "/workspace",
+    "postCreateCommand": "./.devcontainer/post_create_command.sh"
+}

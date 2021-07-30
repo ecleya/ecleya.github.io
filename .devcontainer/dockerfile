@@ -1,0 +1,26 @@
+FROM ruby:latest
+
+RUN apt-get update -yqq && \
+    apt-get upgrade -yqq && \
+    apt-get install -yqq --no-install-recommends curl jq webp zsh && \
+    apt-get autoremove -yqq --purge && \
+    apt-get clean && \
+    rm -rf \
+        /var/lib/apt/lists/* \
+        /tmp/* \
+        /var/tmp/* \
+        /usr/share/man \
+        /usr/share/doc \
+        /usr/share/doc-base
+
+WORKDIR /tmp
+
+RUN export VERSION=$(curl --silent "https://api.github.com/repos/peco/peco/releases/latest" | grep '"tag_name":' | sed -E 's/.*"([^"]+)".*/\1/') && \
+    curl -L -o /tmp/peco.tar.gz https://github.com/peco/peco/releases/download/${VERSION}/peco_linux_amd64.tar.gz && \
+    tar -xvf /tmp/peco.tar.gz -C /tmp && \
+    mv /tmp/peco_*/peco /usr/local/bin && \
+    rm -rf /tmp/peco*
+
+WORKDIR /workspace
+
+ENTRYPOINT ["tail", "-f", "/dev/null"]
