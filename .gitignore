@@ -3,4 +3,6 @@ _site
 .jekyll-metadata
 
 .DS_Store
-.direnv
+
+.vscode
+.zsh_history
