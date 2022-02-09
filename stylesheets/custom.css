@@ -1,0 +1,10 @@
+p.captioned-image {
+    text-align: center;
+}
+
+p.captioned-image em {
+    text-align: center;
+    font-size: .8rem;
+    color: light-grey;
+    display: block;
+}

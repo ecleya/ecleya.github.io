@@ -6,7 +6,7 @@ title:  "better-exceptions를 이용한 python 디버깅 아이디어"
 
 [better-exceptions](https://github.com/Qix-/better-exceptions)라는 라이브러리가 있습니다. 예외가 발생했을 때, 아래의 그림처럼 Traceback 내용을 디버깅하기 유용하게 보여주는 라이브러리입니다.
 
-![better-exceptions screenshot]({{ site.url }}/_assets/2017-07-12-debugging-with-better-exceptions/better-exceptions-screenshot.png)
+![better-exceptions screenshot]({{ site.url }}/assets/2017-07-12-debugging-with-better-exceptions/better-exceptions-screenshot.png)
 
 기본적으로 stdout으로만 출력을 하기 때문에 서버에서 사용하기에는 적합하지 않아보였는데, 뭔가 방법이 없을까 해서 이런 저런 방법을 시도해보다가 한가지 방법을 찾았습니다.
 
