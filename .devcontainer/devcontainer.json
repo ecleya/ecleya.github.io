@@ -1,5 +1,5 @@
 {
-    "name": "blueviolet",
+    "name": "jekyll",
     "build": {
         "context": "..",
         "dockerfile": "dockerfile"
